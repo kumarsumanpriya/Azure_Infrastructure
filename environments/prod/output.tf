@@ -13,3 +13,9 @@ output "vnets" {
   value = module.vnets.vnets
 
 }
+
+# Subnet
+output "subnet_details" {
+  value = module.subnet.subnet
+  
+}

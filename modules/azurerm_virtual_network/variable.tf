@@ -1,6 +1,6 @@
 variable "vnets" {
 
-  description = "Map of Azure Virtual Networks."
+  description = "Map of Azure Virtual Networks"
 
   type = map(object({
     name           = string
