@@ -44,5 +44,42 @@ output "network_interfaces" {
 
 output "public_ip_details" {
   description = "Production Public IP details"
-  value = module.public_ip.public_ip_details
+  value       = module.public_ip.public_ip_details
+}
+
+# Application Gateway
+
+output "application_gateway_details" {
+  description = "Production Application Gateway details"
+  value       = module.application_gateway.application_gateway_details
+
+}
+
+# Bation Host
+
+output "bastion_host_details" {
+  description = "Production Azure Bastion Host details"
+  value       = module.azurerm_bastion.bastion_host_details
+
+}
+
+# LoadBalancer
+
+output "load_balancer_details" {
+  description = "Production Load Balancer details"
+  value       = module.load_balancer.load_balancer_details
+}
+
+# NSG
+
+output "network_security_group_details" {
+  description = "Production Network Security Group details"
+  value       = module.network_security_group.network_security_group_details
+}
+
+# Private Endpoint
+
+output "private_endpoint_details" {
+  description = "Production Private Endpoint details"
+  value       = module.private_endpoint.private_endpoint_details
 }
